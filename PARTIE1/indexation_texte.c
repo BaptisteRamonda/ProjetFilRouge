@@ -1,7 +1,8 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+#include "indexation_texte.h"
 #define MAX 1000
 
 //Fonction pour enlever tous les espaces doubles d'une chaine de caractères (passage par paramètre pour récupérer le tableau, la fonction renvoie la taille du tableau)
@@ -107,15 +108,51 @@ int nombre_caracteres(char *fichier)
     fichier_a_compter = fopen(fichier, "r");
     while (fgetc(fichier_a_compter) != EOF)
     {
-        compteur++; /* incrémentation du compteur */
+        compteur++; // incrémentation du compteur
     }
     fclose(fichier_a_compter);
     return compteur;
 }
 
-//Fonction qui nettoie un fichier (enlève tous les mots qui ne sont pas à indéxer)
-void nettoyage_fichier(char *fichier_a_ouvrir)
+//Fonction supprimant les mots inutiles (listés dans un txt)
+int supprimer_mots_inutiles(char *chaine)
 {
+    FILE *liste_a_supprimer = NULL;
+    liste_a_supprimer = fopen("../../Documents/Exceptions/mots_a_supprimer.txt", "r");
+    int taille_mot;
+    char mot_a_stocker[MAX];
+    char cToStr[2];
+    cToStr[1] = '\0';
+    int nombre_caracteres_dans_tableau = strlen(chaine);
+    do
+    {
+        cToStr[0] = fgetc(liste_a_supprimer);
+        if (cToStr[0] != '\n')
+        {
+            strcat(mot_a_stocker, cToStr);
+        }
+
+        if (cToStr[0] == '\n')
+        {
+            mot_a_stocker[strlen(mot_a_stocker) - 1] = '\0';
+
+            taille_mot = enlever_espaces_debut(mot_a_stocker);
+            taille_mot = enlever_tab_debut(mot_a_stocker);
+
+            nombre_caracteres_dans_tableau = supprimer_occurences(chaine, mot_a_stocker, nombre_caracteres_dans_tableau);
+            strcpy(mot_a_stocker, "\0");
+        }
+
+    } while (cToStr[0] != EOF);
+    return nombre_caracteres_dans_tableau;
+}
+
+//Fonction qui nettoie un fichier (enlève tous les mots qui ne sont pas à indéxer)
+void indexation(char *fichier_a_ouvrir)
+{
+
+    int nombre_mots = 0;
+
     //Les 3 lignes suivantes donnent le PATH courant à partir du nom du fichier
     char *chemin_dossier_xml = "../../Documents/Textes_propres/";
     char chemin_fichier_xml[MAX];
@@ -127,7 +164,6 @@ void nettoyage_fichier(char *fichier_a_ouvrir)
 
     //Variables utilisées
     int i = 0;
-    int j;
     int nombre_caracteres_dans_tableau = 0;
     char propre[nombre_caracteres(chemin_fichier_xml)];
     char caractereActuel = 0;
@@ -147,7 +183,7 @@ void nettoyage_fichier(char *fichier_a_ouvrir)
                 caractereActuel = fgetc(fichier_xml);     //on passe au caractère d'après le '>' de fin de balise
             }
 
-            while (caractereActuel == ':' || caractereActuel == '\n' || caractereActuel == ',' || caractereActuel == '.' || caractereActuel == '\'' || caractereActuel == '(' || caractereActuel == ')') //problème avec le caractère U+00AD qui n'est pas reconnu comme un caractère
+            while (caractereActuel == ':' || caractereActuel == '\n' || caractereActuel == ',' || caractereActuel == '.' || caractereActuel == '\'' || caractereActuel == '(' || caractereActuel == ')' || caractereActuel == '\t' || caractereActuel == '/' || caractereActuel == '!' || caractereActuel == '?' || caractereActuel == '"') //problème avec le caractère U+00AD qui n'est pas reconnu comme un caractère
             {
                 caractereActuel = ' ';
             }
@@ -166,50 +202,112 @@ void nettoyage_fichier(char *fichier_a_ouvrir)
         {
             propre[i] = tolower(propre[i]);
         }
+        //On enlève les mots inutiles spécifiés dans le .txt
+        nombre_caracteres_dans_tableau = supprimer_mots_inutiles(propre);
 
-        //DEBUT TRANSFO FONCTION
-        //Ouverture du fichier de mots à supprimer
-        FILE *liste_a_supprimer = NULL;
-        liste_a_supprimer = fopen("../../Documents/Exceptions/mots_a_supprimer.txt", "r");
-        int taille_mot;
-        char mot_a_stocker[MAX];
-        char cToStr[2];
-        cToStr[1] = '\0';
-        do
+        //On enlève les espaces doubles
+        nombre_caracteres_dans_tableau = enlever_espaces_doubles(propre);
+
+        propre[strlen(propre) - 1] = '\0';
+        //On pourrait faire une fonction spécifique du code ci dessous si besoin de le réutiliser, pour ce faire on a besoin de faire 2 passages par paramètres
+
+        char liste_mots[MAX][MAX_MOT];
+
+        int occurences[MAX];
+        for (i = 0; i < MAX; i++)
+            occurences[i] = 0;
+
+        char mot_a_stocker[MAX_MOT];
+
+        char caractere_actuel;
+        int longueur_mot = 0;
+        int i = 0;
+        caractere_actuel = propre[i];
+        while (caractere_actuel != '\0')
         {
-            cToStr[0] = fgetc(liste_a_supprimer);
-            if (cToStr[0] != '\n')
             {
-                strcat(mot_a_stocker, cToStr);
-            }
+                mot_a_stocker[longueur_mot++] = caractere_actuel;
+                mot_a_stocker[longueur_mot] = '\0';
+                if (caractere_actuel == ' ')
+                {
 
-            if (cToStr[0] == '\n')
+                    // printf("[DEBUT]%s[FIN]\n", mot_a_stocker);
+                    int unique = 1; //Est unique
+                    for (int i = 0; i < nombre_mots && unique; i++)
+                    {
+                        if (strcmp(mot_a_stocker, liste_mots[i]) == 0) //Si les deux chaines sont égales
+                        {
+                            occurences[i]++;
+                            unique = 0; //n'est pas unique
+                        }
+                    }
+                    if (unique) //Si après parcours toujours unique
+                    {
+                        strcpy(liste_mots[nombre_mots], mot_a_stocker);
+                        occurences[nombre_mots]++;
+                        nombre_mots++;
+                    }
+
+                    longueur_mot = 0;
+                }
+                i++;
+                caractere_actuel = propre[i];
+            }
+        }
+
+        mot_occurences index[nombre_mots];
+        for (i = 0; i < nombre_mots; i++)
+        {
+            strcpy(index[i].mot, liste_mots[i]);
+            index[i].occurences = occurences[i];
+        }
+        //On trie le tableau dans l'ordre décroissant
+        mot_occurences temp;
+        for (i = 0; i < nombre_mots - 1; i++)
+        {
+            for (int j = i + 1; j < nombre_mots; j++)
             {
-                mot_a_stocker[strlen(mot_a_stocker) - 1] = '\0';
-                taille_mot = enlever_espaces_debut(mot_a_stocker);
-                taille_mot = enlever_tab_debut(mot_a_stocker);
-                nombre_caracteres_dans_tableau = supprimer_occurences(propre, mot_a_stocker, nombre_caracteres_dans_tableau);
-                strcpy(mot_a_stocker, "\0");
+                if (index[i].occurences < index[j].occurences)
+                {
+                    strcpy(temp.mot, index[i].mot);
+                    temp.occurences = index[i].occurences;
+
+                    strcpy(index[i].mot, index[j].mot);
+                    index[i].occurences = index[j].occurences;
+
+                    strcpy(index[j].mot, temp.mot);
+                    index[j].occurences = temp.occurences;
+                }
             }
+        }
 
-        } while (cToStr[0] != EOF);
-        //FIN TRANSFO FONCTION
-
-        nombre_caracteres_dans_tableau=enlever_espaces_doubles(propre);
-        propre[strlen(propre)-1]=EOF; //Pas bien compris pourquoi il prend un caractère de trop(à revoir)
-
-        //On affiche le texte propre (à enlever)
-        printf("[DEBUT TEXTE]");
-        printf("%s", propre);
-        printf("[FIN TEXTE]");
-        printf("\n");
         fclose(fichier_xml);
+        char *descripteurs = "Descripteurs_";
+        char nom_fichier_descripteurs[250];
+        strcat(strcpy(nom_fichier_descripteurs, descripteurs), fichier_a_ouvrir);
+        char *chemin_dossier_tableaux = "../../Documents/Descripteurs_Textes/";
+        char chemin_fichier_tableau[MAX];
+        strcat(strcpy(chemin_fichier_tableau, chemin_dossier_tableaux), nom_fichier_descripteurs);
+        FILE *fichier_tableau = NULL;
+        fichier_tableau = fopen(chemin_fichier_tableau, "w");
+
+        for (int i = 0; i < nombre_mots; i++)
+        {
+
+            fprintf(fichier_tableau, "%s ", index[i].mot);
+            fprintf(fichier_tableau, "%d\n", index[i].occurences);
+        }
+
+        fclose(fichier_tableau);
     }
 }
 
-int main()
+
+int main(int argc, char *argv[])
 {
     char *file_to_open = "03-Des_chercheurs_parviennent_à_régénérer.xml";
-    nettoyage_fichier(file_to_open);
+
+    indexation(file_to_open);
+
     return 0;
 }
