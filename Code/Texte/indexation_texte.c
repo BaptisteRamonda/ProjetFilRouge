@@ -294,7 +294,7 @@ void indexation(char *fichier_a_ouvrir)
 
         for (int i = 0; i < nombre_mots; i++)
         {
-            fprintf(fichier_tableau, "%s\n", index[i].mot);
+            fprintf(fichier_tableau, "%s ", index[i].mot);
             fprintf(fichier_tableau, "%d\n", index[i].occurences);
         }
 

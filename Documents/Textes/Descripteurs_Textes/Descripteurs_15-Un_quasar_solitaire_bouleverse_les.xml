@@ -1,408 +1,204 @@
-quasar
-7
-galaxie
-5
-astronomes
-4
-centre
-3
-millions
-3
-matière
-3
-vivant
-2
-comporter
-2
-goinfrait
-2
-restaurant
-2
-table
-2
-aliment
-2
-équipe
-2
-15
-2
-trou
-2
-noir
-2
-univers
-2
-trous
-2
-noirs
-2
-déroutant
-2
-étoiles
-2
-luminosité
-2
-quasars
-2
-regarder
-2
-cosmos
-2
-étoile
-2
-composée
-2
-université
-2
-epfl
-2
-outils
-2
-trouve
-2
-expliquer
-2
-coin
-1
-massifs
-1
-situé
-1
-place
-1
-occupent
-1
-semblables
-1
-11
-1
-énorme
-1
-51
-1
-fournit
-1
-26
-1
-gmt
-1
-insatiable
-1
-appétit
-1
-déviant
-1
-pourtant
-1
-régaler
-1
-puisqu
-1
-émet
-1
-jérôme
-1
-considéré
-1
-brillants
-1
-fenoglio
-1
-fort
-1
-absorption
-1
-quantités
-1
-phénoménales
-1
-thu
-1
-torsion
-1
-substance
-1
-disque
-1
-tournoie
-1
-autour
-1
-glouton
-1
-engouffrer
-1
-met
-1
-étinceler
-1
-soleil
-1
-classent
-1
-objets
-1
-flamboyants
-1
-utilisent
-1
-seules
-1
-torches
-1
-capables
-1
-explorer
-1
-tréfonds
-1
-solitaire
-1
-confondus
-1
-valu
-1
-nom
-1
-vient
-1
-anglais
-1
-quasi-star
-1
-presque
-1
-bouleverse
-1
-maison
-1
-découvert
-1
-hasard
-1
-internationale
-1
-pierre
-1
-magain
-1
-géraldine
-1
-letawe
-1
-institut
-1
-astrophysique
-1
-géophysique
-1
-théories
-1
-liège
-1
-frédéric
-1
-courbin
-1
-georges
-1
-meylan
-1
-ecole
-1
-polytechnique
-1
-fédérale
-1
-lausanne
-1
-repéré
-1
-pascale
-1
-jablonka
-1
-genève
-1
-cherchait
-1
-établir
-1
-variété
-1
-propriétés
-1
-morphologies
-1
-galaxies
-1
-hôtes
-1
-utilisé
-1
-sep
-1
-actuellement
-1
-puissants
-1
-scruter
-1
-ciel
-1
-télescope
-1
-spatial
-1
-hubble
-1
-very
-1
-large
-1
-telescope
-1
-european
-1
-southern
-1
-observatory
-1
-eso
-1
-chili
-1
-mis
-1
-point
-1
-méthode
-1
-capable
-1
-soustraire
-1
-propre
-1
-aveuglante
-1
-19
-1
-premiers
-1
-tapis
-1
-toile
-1
-galactique
-1
-vingtième
-1
-errait
-1
-écart
-1
-prévision
-1
-théorique
-1
-vrai
-1
-atypique
-1
-2005
-1
-isolé
-1
-relatent
-1
-auteurs
-1
-revue
-1
-nature
-1
-septembre
-1
-situe
-1
-lisière
-1
-nuage
-1
-gaz
-1
-taille
-1
-petite
-1
-contenir
-1
-moindre
-1
-présence
-1
-nappe
-1
-gazeuse
-1
-suffire
-1
-massif
-1
-intense
-1
-activité
-1
-digestive
-1
-loin
-1
-comportement
-1
-visiblement
-1
-perturbé
-1
-donnant
-1
-signes
-1
-subi
-1
-collisions
-1
-ordinaire
-1
-évolution
-1
-télescopage
-1
-peut-il
-1
-position
-1
-excentrique
-1
-hypothèses
-1
-retenues
-1
-explication
-1
-suivrait
-1
-piste
-1
-sombre
-1
-mode
-1
-principalement
-1
-type
-1
-invisible
-1
-humains
-1
+quasar 7
+galaxie 5
+astronomes 4
+centre 3
+millions 3
+matière 3
+vivant 2
+comporter 2
+goinfrait 2
+restaurant 2
+table 2
+aliment 2
+équipe 2
+15 2
+trou 2
+noir 2
+univers 2
+trous 2
+noirs 2
+déroutant 2
+étoiles 2
+luminosité 2
+quasars 2
+regarder 2
+cosmos 2
+étoile 2
+composée 2
+université 2
+epfl 2
+outils 2
+trouve 2
+expliquer 2
+coin 1
+massifs 1
+situé 1
+place 1
+occupent 1
+semblables 1
+11 1
+énorme 1
+51 1
+fournit 1
+26 1
+gmt 1
+insatiable 1
+appétit 1
+déviant 1
+pourtant 1
+régaler 1
+puisqu 1
+émet 1
+jérôme 1
+considéré 1
+brillants 1
+fenoglio 1
+fort 1
+absorption 1
+quantités 1
+phénoménales 1
+thu 1
+torsion 1
+substance 1
+disque 1
+tournoie 1
+autour 1
+glouton 1
+engouffrer 1
+met 1
+étinceler 1
+soleil 1
+classent 1
+objets 1
+flamboyants 1
+utilisent 1
+seules 1
+torches 1
+capables 1
+explorer 1
+tréfonds 1
+solitaire 1
+confondus 1
+valu 1
+nom 1
+vient 1
+anglais 1
+quasi-star 1
+presque 1
+bouleverse 1
+maison 1
+découvert 1
+hasard 1
+internationale 1
+pierre 1
+magain 1
+géraldine 1
+letawe 1
+institut 1
+astrophysique 1
+géophysique 1
+théories 1
+liège 1
+frédéric 1
+courbin 1
+georges 1
+meylan 1
+ecole 1
+polytechnique 1
+fédérale 1
+lausanne 1
+repéré 1
+pascale 1
+jablonka 1
+genève 1
+cherchait 1
+établir 1
+variété 1
+propriétés 1
+morphologies 1
+galaxies 1
+hôtes 1
+utilisé 1
+sep 1
+actuellement 1
+puissants 1
+scruter 1
+ciel 1
+télescope 1
+spatial 1
+hubble 1
+very 1
+large 1
+telescope 1
+european 1
+southern 1
+observatory 1
+eso 1
+chili 1
+mis 1
+point 1
+méthode 1
+capable 1
+soustraire 1
+propre 1
+aveuglante 1
+19 1
+premiers 1
+tapis 1
+toile 1
+galactique 1
+vingtième 1
+errait 1
+écart 1
+prévision 1
+théorique 1
+vrai 1
+atypique 1
+2005 1
+isolé 1
+relatent 1
+auteurs 1
+revue 1
+nature 1
+septembre 1
+situe 1
+lisière 1
+nuage 1
+gaz 1
+taille 1
+petite 1
+contenir 1
+moindre 1
+présence 1
+nappe 1
+gazeuse 1
+suffire 1
+massif 1
+intense 1
+activité 1
+digestive 1
+loin 1
+comportement 1
+visiblement 1
+perturbé 1
+donnant 1
+signes 1
+subi 1
+collisions 1
+ordinaire 1
+évolution 1
+télescopage 1
+peut-il 1
+position 1
+excentrique 1
+hypothèses 1
+retenues 1
+explication 1
+suivrait 1
+piste 1
+sombre 1
+mode 1
+principalement 1
+type 1
+invisible 1
+humains 1

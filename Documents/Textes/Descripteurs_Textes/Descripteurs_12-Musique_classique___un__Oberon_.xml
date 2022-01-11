@@ -1,380 +1,190 @@
-oberon
-7
-musique
-3
-weber
-3
-direction
-3
-john
-3
-eliot
-3
-gardiner
-3
-romantiques
-2
-fréquemment
-2
-resté
-2
-ombre
-2
-fascinée
-2
-populaire
-2
-freischütz
-2
-1821
-2
-motivé
-2
-commande
-2
-covent
-2
-garden
-2
-joué
-2
-anglais
-2
-planché
-2
-version
-2
-opéra
-2
-allemagne
-2
-grande-bretagne
-2
-opéras
-2
-belle
-2
-chevalier
-2
-huon
-2
-reiza
-2
-monteverdi
-2
-choir
-2
-hillevi
-2
-martinpelto
-2
-steve
-2
-davislim
-2
-mort
-1
-tiré
-1
-poème
-1
-épique
-1
-wieland
-1
-sorte
-1
-singspiel
-1
-adapté
-1
-marie-aude
-1
-james
-1
-robinson
-1
-roux
-1
-1970
-1
-mon
-1
-allemand
-1
-classique
-1
-enregistrée
-1
-rafael
-1
-kubelik
-1
-deutsche
-1
-grammophon
-1
-bénéficiait
-1
-distribution
-1
-pair
-1
--
-1
-­
-1
-placido
-1
-domingo
-1
-birgit
-1
-nilsson
-1
-hermann
-1
-prey
-1
-­-
-1
-surpassée
-1
-réalisée
-1
-12
-1
-historique
-1
-sep
-1
-dirigé
-1
-oeuvre
-1
-1986
-1
-lyon
-1
-marque
-1
-discographie
-1
-pierre
-1
-blanche
-1
-chef
-1
-britannique
-1
-coupé
-1
-dialogues
-1
-substituer
-1
-courts
-1
-textes
-1
-liaison
-1
-narrateur
-1
-laissant
-1
-part
-1
-2005
-1
-colorée
-1
-délicate
-1
-savamment
-1
-inspirée
-1
-scènes
-1
-teintées
-1
-exotisme
-1
-féerie
-1
-naturaliste
-1
-action
-1
-tantinet
-1
-complexe
-1
-fâché
-1
-épouse
-1
-titania
-1
-roi
-1
-fées
-1
-met
-1
-réconciliation
-1
-condition
-1
-sine
-1
-qua
-1
-trouver
-1
-couple
-1
-vraiment
-1
-fidèle
-1
-amours
-1
-contrariées
-1
-11
-1
-50
-1
-57
-1
-fille
-1
-calife
-1
-bagdad
-1
-enlèvement
-1
-sérail
-1
-naufrage
-1
-mer
-1
-déchaînée
-1
-apporteront
-1
-preuve
-1
-éclatante
-1
-vivante
-1
-évocatrice
-1
-sens
-1
-aigu
-1
-merveilleux
-1
-shakespeare
-1
-subtilité
-1
-travail
-1
-couleurs
-1
-articulations
-1
-vents
-1
-cordes
-1
-donne
-1
-ailes
-1
-elfe
-1
-mise
-1
-arrêts
-1
-romantisme
-1
-germanique
-1
-créé
-1
-londres
-1
-excellent
-1
-1826
-1
-gmt
-1
-aisance
-1
-désirée
-1
-fatima
-1
-marina
-1
-comparato
-1
-égalité
-1
-conviendrait
-1
-musical
-1
-délicieux
-1
-ténors
-1
-tiennent
-1
-pavé
-1
-sentimental
-1
-compositeur
-1
-mois
-1
-magnifique
-1
-valeureux
-1
-jonas
-1
-kaufmann
-1
-carl
-1
-maria
-1
-von
-1
-orchestre
-1
-révolutionnaire
-1
-romantique
-1
-2
-1
-cd
-1
-philips
-1
-universal
-1
+oberon 7
+musique 3
+weber 3
+direction 3
+john 3
+eliot 3
+gardiner 3
+romantiques 2
+fréquemment 2
+resté 2
+ombre 2
+fascinée 2
+populaire 2
+freischütz 2
+1821 2
+motivé 2
+commande 2
+covent 2
+garden 2
+joué 2
+anglais 2
+planché 2
+version 2
+opéra 2
+allemagne 2
+grande-bretagne 2
+opéras 2
+belle 2
+chevalier 2
+huon 2
+reiza 2
+monteverdi 2
+choir 2
+hillevi 2
+martinpelto 2
+steve 2
+davislim 2
+mort 1
+tiré 1
+poème 1
+épique 1
+wieland 1
+sorte 1
+singspiel 1
+adapté 1
+marie-aude 1
+james 1
+robinson 1
+roux 1
+1970 1
+mon 1
+allemand 1
+classique 1
+enregistrée 1
+rafael 1
+kubelik 1
+deutsche 1
+grammophon 1
+bénéficiait 1
+distribution 1
+pair 1
+- 1
+­ 1
+placido 1
+domingo 1
+birgit 1
+nilsson 1
+hermann 1
+prey 1
+­- 1
+surpassée 1
+réalisée 1
+12 1
+historique 1
+sep 1
+dirigé 1
+oeuvre 1
+1986 1
+lyon 1
+marque 1
+discographie 1
+pierre 1
+blanche 1
+chef 1
+britannique 1
+coupé 1
+dialogues 1
+substituer 1
+courts 1
+textes 1
+liaison 1
+narrateur 1
+laissant 1
+part 1
+2005 1
+colorée 1
+délicate 1
+savamment 1
+inspirée 1
+scènes 1
+teintées 1
+exotisme 1
+féerie 1
+naturaliste 1
+action 1
+tantinet 1
+complexe 1
+fâché 1
+épouse 1
+titania 1
+roi 1
+fées 1
+met 1
+réconciliation 1
+condition 1
+sine 1
+qua 1
+trouver 1
+couple 1
+vraiment 1
+fidèle 1
+amours 1
+contrariées 1
+11 1
+50 1
+57 1
+fille 1
+calife 1
+bagdad 1
+enlèvement 1
+sérail 1
+naufrage 1
+mer 1
+déchaînée 1
+apporteront 1
+preuve 1
+éclatante 1
+vivante 1
+évocatrice 1
+sens 1
+aigu 1
+merveilleux 1
+shakespeare 1
+subtilité 1
+travail 1
+couleurs 1
+articulations 1
+vents 1
+cordes 1
+donne 1
+ailes 1
+elfe 1
+mise 1
+arrêts 1
+romantisme 1
+germanique 1
+créé 1
+londres 1
+excellent 1
+1826 1
+gmt 1
+aisance 1
+désirée 1
+fatima 1
+marina 1
+comparato 1
+égalité 1
+conviendrait 1
+musical 1
+délicieux 1
+ténors 1
+tiennent 1
+pavé 1
+sentimental 1
+compositeur 1
+mois 1
+magnifique 1
+valeureux 1
+jonas 1
+kaufmann 1
+carl 1
+maria 1
+von 1
+orchestre 1
+révolutionnaire 1
+romantique 1
+2 1
+cd 1
+philips 1
+universal 1
