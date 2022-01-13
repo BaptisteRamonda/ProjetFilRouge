@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+#include "structures_texte.h"
 #include "indexation_texte.h"
 #define MAX 1000
 #define MAX_MOT 50
@@ -232,7 +233,6 @@ void indexation(char *fichier_a_ouvrir)
                 if (caractere_actuel == ' ')
                 {
                     mot_a_stocker[longueur_mot - 1] = '\0'; //SI UNE LIGNE CREE DES PB C'EST SANS DOUTE ELLE
-                    // printf("[DEBUT]%s[FIN]\n", mot_a_stocker);
                     int unique = 1; //Est unique
                     for (int i = 0; i < nombre_mots && unique; i++)
                     {

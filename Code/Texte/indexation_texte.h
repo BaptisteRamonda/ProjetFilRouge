@@ -1,12 +1,5 @@
 #ifndef __INDEXATION_TEXTE_H__
 #define __INDEXATION_TEXTE_H__
-#define MAX_MOT 50
-//STRUCTURES
-typedef struct s_mot_occ
-{
-    char mot[MAX_MOT];
-    int occurences;
-} mot_occurences;
 
 /*
 Fonction : pour enlever tous les espaces doubles d'une chaine de
