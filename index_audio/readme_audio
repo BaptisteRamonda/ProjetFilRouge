@@ -7,5 +7,9 @@ Le fichier div_fenetre.c contien toute les fonctions et le test_div_fen.c est le
 Pour le programme principale il faudra prévoire de donner a l'admin accés au fichier .config et d'en changer les deux valeurs qui y sont mais aussi la possibilité d'ouvrir le fichier base_descriteur_audio.txt
 et ou liste_base_audio pour visualiser l'indexation.
 
-Si tout autre fichier audio doit etre ajouter pour une recherche elle doit obligatoirement etre ajouter dans le dossier Audio_data_base.
-Puis donner la possibiliter a l'utilisateur de pouvoir soit écouter a partir de quel moment apparait le jingle dans le corpus pour vérifiction ou juste s'il veut savoir le nombre de seconde au quel le jingle commence.
+Si tout autre fichier audio doit etre ajouter pour une recherche elle doit obligatoirement etre ajouter dans le dossier Audio_data_base et commencer par le mot jingle si s'en est un ou corpus si c'est un corpus.
+Puis donner la possibilité a l'utilisateur de pouvoir soit écouter a partir de quel moment apparait le jingle dans le corpus pour vérifiction ou juste s'il veut savoir le nombre de seconde au quel le jingle commence.
+Installer mplayer aussi pour jouer les fichiers .wav
+
+Le programme va permettre a l'utilisateur de choisir parmis la liste des jingles qui se trouvent dans la base audio celui qu'il veut rechercher et la recherche se fera parmis tous les corpus disponibles 
+dans la base audio.
