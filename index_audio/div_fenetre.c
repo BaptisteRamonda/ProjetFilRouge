@@ -88,7 +88,8 @@ Descrip Creation_descripteur_audio(const char *nomfichier,long *k,long n,int m){
   MA_FILE *ptr;
   ptr=Creation_hist_analyses(nomfichier,n,m,k); // Creation des histogrammes d'annalyse
   Descrip mon_descripteur;
-  mon_descripteur.identifiant = nomfichier; // initialisation de l'identifiant du descripteur 
+  
+ // mon_descripteur.identifiant = nomfichier; // initialisation de l'identifiant du descripteur 
   mon_descripteur.k = *k; // nombre de ligne de l'histogramme du descripteur
   int **histogramme = (int**)malloc(*k*sizeof(int*)); // Allocation dynamique d'une matrice pour l'histogramme
   cellule * tmp ;
@@ -107,7 +108,7 @@ Descrip Creation_descripteur_audio(const char *nomfichier,long *k,long n,int m){
   mon_descripteur.histo = histogramme; // Affectation de l'histogramme du descripteur
   FILE * fic;
   fic = fopen("base_descripteur_audio.txt","a"); // Ouverture du fichier pour base_descirpteur_audio.txt pour enregistrer les descripteurs crées.
-  fprintf(fic, "%s\n",mon_descripteur.identifiant ); // Ecriture de l'identifiant dans le fichier
+  fprintf(fic, "%s\n",nomfichier ); // Ecriture de l'identifiant dans le fichier
 
 
   for(int i=0;i<*k;i++){
@@ -116,7 +117,7 @@ Descrip Creation_descripteur_audio(const char *nomfichier,long *k,long n,int m){
     }
     fprintf(fic,"\n");
    }
-   fprintf(fic,"/*fin_%s*/\n",mon_descripteur.identifiant);
+   fprintf(fic,"/*fin_%s*/\n",nomfichier);
   fclose(fic);
   return mon_descripteur; // renvoi le descripteur créer
 }
@@ -139,13 +140,10 @@ Descrip * indexation_automatique(Descrip * base_descript_audio,int *nbr_descript
   
   char *chaine; 
   size_t len =0;
-  const char *tmp;
   while(getline(&chaine, &len,fp) != -1){   //Pour lire les chemins absolues trouver au niveau du pipe
     
     long kl;
     chaine[strlen(chaine)-1]='\0'; //Elimination du caractere "\n"; 
-    
-    const char * chains = chaine;
     
    if(*nbr_descripteur > 0){
       
@@ -155,36 +153,36 @@ Descrip * indexation_automatique(Descrip * base_descript_audio,int *nbr_descript
       fseek(f,0,SEEK_SET);
       while(getline(&line, &length,f) != -1){ //Lecture du fichier audio_data_base.txt
         line[strlen(line)-1]='\0';
-        if(strcmp(chains,line) == 0){
+        if(strcmp(chaine,line) == 0){
           p = 1 ;
         } //Cette partie consiste a vérifier si le fichier dont le chemin a été lu a déja été indexer. Et cette verification se fait en lisant les fichiers deja indexer dans liste_base_audio.txt
 
       }
       if(p==0){
-        base_descript_audio[*nbr_descripteur]=Creation_descripteur_audio(chains,&kl,n,m);
+        base_descript_audio[*nbr_descripteur]=Creation_descripteur_audio(chaine,&kl,n,m);
+        base_descript_audio[*nbr_descripteur].identifiant = (char *)malloc(strlen(chaine)+1);
+        strcpy (base_descript_audio[*nbr_descripteur].identifiant,chaine);
         fprintf(f,"%s\n",base_descript_audio[*nbr_descripteur].identifiant); // Mise a jour de liste_base_audio
         *nbr_descripteur +=1;
       } //indexation du fichier correspondant.
     }
     else{
       
-      base_descript_audio[*nbr_descripteur]=Creation_descripteur_audio(chains,&kl,n,m);//indexation du fichier correspondant
+      base_descript_audio[*nbr_descripteur]=Creation_descripteur_audio(chaine,&kl,n,m);//indexation du fichier correspondant
+      base_descript_audio[*nbr_descripteur].identifiant = (char *)malloc(strlen(chaine)+1);
+      strcpy (base_descript_audio[*nbr_descripteur].identifiant,chaine);
       fprintf(f,"%s\n",base_descript_audio[*nbr_descripteur].identifiant);// Mise a jour de liste_base_audio
       *nbr_descripteur +=1; //Mise a jour du nombre de descripteur creer 
       
       }
   }
-  char *fline;
-  size_t l;
-  getline(&fline, &l,f);
-  //fline[strlen(fline)-1]='\0';
-  base_descript_audio[0].identifiant = fline;
   fclose(f);
   pclose(fp);
   return base_descript_audio;
 }
 float recherche_jingle(Descrip corpus , Descrip jingle,int n,int m){
-//Cette fonction permet de trouver a partir de quel seconde le jingle apparait dans le corpus 
+//Cette fonction permet de trouver a partir de quel seconde le jingle apparait dans le corpus et il renvoie la seconde exact ou retourne -1 si le jingle ne se trouve pas dans le corpus 
+
 
     long Kc = corpus.k;  // Recuperation du nombre de ligne de l'histogramme du corpus
     long Kj = jingle.k; // Recuperation du nombre de ligne de l'histogramme du jingle
@@ -205,15 +203,28 @@ float recherche_jingle(Descrip corpus , Descrip jingle,int n,int m){
          c=0;
     } // permet de calculer les distances de manhatan 
     int min = dist_manha[0];
-    int indice_min=0;
+    int indice_min;
+    int p=0;
     for(int l=0;l<compteur;l++){
-        if(dist_manha[l]<min){
+        if(dist_manha[l]<min ){
             min = dist_manha[l];
             indice_min=l;
+            p++;
+            
         } // Permet de trouver le minimum parmis les distances calculées
     }
+
+    int seuil = 2300;
+    if(8192/n >= 2 && m/10 >=3 ){seuil = seuil + 1000+m *50 ;}
+    if(n == 8192 ){seuil =seuil + m*20 ;}
+    if(8192/n >= 2 && m/10 < 3){seuil = seuil + 1000 + m *50*1.5 ;}
+    if(min<seuil){
     float nbre_seconde;
     nbre_seconde = (n/(float)16000)*(indice_min+1); // permet de trouver la seconde a la quelle le jingle apparait dans le corpus.
     
     return nbre_seconde;
+    }
+    return -1; // retourne -1 si le jingle ne se trouve pas dans le corpus 
+    
+    
 }

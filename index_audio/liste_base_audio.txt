@@ -1,2 +1,4 @@
 /mnt/d/index_audio_v3/index_audio/Audio_data_base/corpus_fi.bin
+/mnt/d/index_audio_v3/index_audio/Audio_data_base/corpus_m6.bin
 /mnt/d/index_audio_v3/index_audio/Audio_data_base/jingle_fi.bin
+/mnt/d/index_audio_v3/index_audio/Audio_data_base/jingle_m6.bin

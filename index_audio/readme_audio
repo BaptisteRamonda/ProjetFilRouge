@@ -8,7 +8,4 @@ Pour le programme principale il faudra prévoire de donner a l'admin accés au f
 et ou liste_base_audio pour visualiser l'indexation.
 
 Si tout autre fichier audio doit etre ajouter pour une recherche elle doit obligatoirement etre ajouter dans le dossier Audio_data_base.
-Puis donner la possibilité a l'utilisateur de pouvoir soit écouter a partir de quel moment apparait le jingle dans le corpus pour vérifiction ou juste s'il veut savoir le nombre de seconde au quel le jingle commence.
-
-Installer mplayer pour pouvoir écouter audio au niveau du terminal.
-"sudo apt install mplayer". 
+Puis donner la possibiliter a l'utilisateur de pouvoir soit écouter a partir de quel moment apparait le jingle dans le corpus pour vérifiction ou juste s'il veut savoir le nombre de seconde au quel le jingle commence.

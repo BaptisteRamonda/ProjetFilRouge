@@ -6,9 +6,9 @@
 #include "file_dynamique.h"
 
 typedef struct descripteur_audio{
-  const char *identifiant;
   int ** histo ;
   long k;
+  char *identifiant;
 } Descrip;
 
 MA_FILE * Creation_fenetre_analyses(const char *nomfichier,long n,long *d);
