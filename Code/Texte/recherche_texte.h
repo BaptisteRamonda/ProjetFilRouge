@@ -1,6 +1,6 @@
 #ifndef __RECHERCHE_TEXTE_H__
 #define __RECHERCHE_TEXTE_H__
-
+#include "structures_texte.h"
 /*
 Fonction : pour récupérer un tableau de mot_occurences depuis
 un fichier .txt (ou autre extension) étant une indexation.

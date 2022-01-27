@@ -18,4 +18,10 @@ typedef struct s_textes_freq
     char nom_fichier[250];
 } freq_mot_texte;
 
+typedef struct s_comp_textes{
+    char nom_fichier[250];
+    struct s_mot_occ * ressemblance;
+    int nb_mots_communs;
+} comp_textes;
+
 #endif

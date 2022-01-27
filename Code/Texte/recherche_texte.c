@@ -122,8 +122,9 @@ int main(int argc, char *argv[])
 {
 
     freq_mot_texte frequence[MAX];
-
-    int taille2 = recherche(frequence, argv[1]);
+    char mot[50];
+    scanf("%s", mot);
+    int taille2 = recherche(frequence, mot);
     tri_frequences(frequence, taille2);
     for (int i = 0; i < taille2; i++)
     {
