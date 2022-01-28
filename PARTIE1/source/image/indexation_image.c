@@ -1,6 +1,6 @@
 /*  AUTEUR :    SAURAT DORIAN                                                                               */
 /*                                                                                                          */
-/*  NOM :       comparaison_image.c                                                                         */
+/*  NOM :       indexation_image.c                                                                          */
 /*                                                                                                          */
 /*  Fonction :  Réalise la fonction d'indexation d'un dossier de fichiers images via un prétraitement des   */
 /*              documents texte, recomposition des pixels en valeurs RVB puis calcul des histogrammes tous  */
@@ -18,9 +18,9 @@ void get_Taille_Type_image(FILE *fich_image, int *taille, int *type)
     int h = 0;
     int l = 0;
 
-    fscanf(fich_image, "%d", &h);
-    fscanf(fich_image, "%d", &l);
-    fscanf(fich_image, "%d", type);
+    fscanf(fich_image, "%d", &h);       //Lignes 
+    fscanf(fich_image, "%d", &l);       //Colonnes 
+    fscanf(fich_image, "%d", type);     //Type
     *taille = (h * l);
 }
 
@@ -28,32 +28,30 @@ void Pretraitement(int nb_bits_poids_fort, FILE *fich_image, int *tabPredescripe
 {
 
     int vals_traitees = 0;
-    int nombre = 0;
+    int nombre = 0;         //nombre courant lu en cours de traitement
 
-    if (fich_image == NULL)
+    if (fich_image == NULL)     //test de l'ouverture du fichier image.txt
     {
         printf("Erreur à la lecture du fichier_lu, char *fichier_lu\n");
         exit(1);
     }
 
-    fscanf(fich_image, "%d", &nombre); // lescture des entiers 1 par 1 dans le fichier jusqu'à la fin du fichier
-    /*///////////////////////////////////////////////////////Récup des entiers ///////*/
+    fscanf(fich_image, "%d", &nombre);  // lescture des entiers 1 par 1 dans le fichier jusqu'à la fin du fichier
 
-    do // lescture des entiers 1 par 1 dans le fichier jusqu'à la fin du fichier
+    do // lecture des entiers 1 par 1 dans le fichier jusqu'à la fin du fichier
     {
-        /*///////////////////////////////////////////////Traitement du nombre////*/
         if (nb_bits_poids_fort == 2)
         {
             nombre = nombre & MSK_2_BITS;
-            nombre = nombre >> 6;                     /* récup bits de poids fort */
-            tabPredescripeur[vals_traitees] = nombre; //replace les valeurs après traîtement dnas les tableau avec un décalage de 4 cases, permet de ne pas récupérer les 3 premières valeurs
+            nombre = nombre >> 6;                     //Récupération des deux bits de poids par masquage puis décalage. Normalement un décalage suffit 
+            tabPredescripeur[vals_traitees] = nombre; //replace les valeurs après traîtement dans les tableau
             vals_traitees++;
         }
         else
         {
             nombre = nombre & MSK_3_BITS;
-            nombre = nombre >> 5;
-            tabPredescripeur[vals_traitees] = nombre; //replace les valeurs après traîtement dnas les tableau avec un décalage de 4 cases, permet de ne pas récupérer les 3 premières valeurs
+            nombre = nombre >> 5;                     //Récupération des trois bits de poids par masquage puis décalage. Normalement un décalage suffit 
+            tabPredescripeur[vals_traitees] = nombre; //replace les valeurs après traîtement dnas les tableau
             vals_traitees++;
         }
         fscanf(fich_image, "%d", &nombre);
@@ -74,7 +72,6 @@ void Reconst_pixels(int *tab_pretrait, int nb_bits_poids_fort)
 {
     int nb_pix = 0; /*// nombre de pixels traitées doit être de 40000 pour les images couleur;*/
 
-    /*////////////////////////////////////// récup des valeurs prétraitées dans le fichier;*/
     if (tab_pretrait == NULL)
     {
         printf("Erreur de remplissage du tab_pretrait des valeurs prétraitées\n");
@@ -84,12 +81,12 @@ void Reconst_pixels(int *tab_pretrait, int nb_bits_poids_fort)
     {
         for (nb_pix = 0; nb_pix < NBPIXEL; nb_pix++)
         {
-            tab_pretrait[nb_pix] = reconstitution_pixel(tab_pretrait, nb_pix, nb_bits_poids_fort);
+            tab_pretrait[nb_pix] = reconstitution_pixel(tab_pretrait, nb_pix, nb_bits_poids_fort); //Reconstion des valeurs finales par concaténation des trois conposantes RVB
         }
     }
 }
 
-int nb_occurences(int *tab_valeurs, int nbElem, int valeur)
+int nb_occurences(int *tab_valeurs, int nbElem, int valeur) 
 {
     if (nbElem == 0)
         return 0;
@@ -101,13 +98,11 @@ int nb_occurences(int *tab_valeurs, int nbElem, int valeur)
 
 int indexation(char *fichier_lu, int nb_bits_quantif, DESCRIPTEUR *descripteur, int nb_images_indexees)
 {
-
-    // printf("test2\n");
     char *chemin_dossier_images = "../../documents/image/TEST_IMAGE/";
     char chemin_fichier_image[1000];
-    strcat(strcpy(chemin_fichier_image, chemin_dossier_images), fichier_lu);
+    strcat(strcpy(chemin_fichier_image, chemin_dossier_images), fichier_lu); // acquisition du chemin du fichier à lire 
 
-    FILE *fich_r = fopen(chemin_fichier_image, "r"); //ouverture fichier image lu
+    FILE *fich_r = fopen(chemin_fichier_image, "r"); //ouverture fichier image lu  // ouverture du fichier
 
     int nombre_pixels = 0;
     int type_image = 0;
