@@ -1,3 +1,10 @@
+/*  AUTEUR :    SAURAT DORIAN                                                                               */
+/*                                                                                                          */
+/*  NOM :   comparaison_image.c                                                                             */
+/*                                                                                                          */
+/*  Fonction :  Contient les en-têtes des fonctions nécessaires à l'implémentation du fichier               */
+/*              indexation_image.c, les structures et variables globales également                          */
+
 #ifndef INDEXATION_IMAGE_H
 #define INDEXATION_IMAGE_H
 
