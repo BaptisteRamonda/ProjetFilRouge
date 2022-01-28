@@ -21,5 +21,6 @@ int main(){
      int  nbr_descripteur= 0;
      float secondes[20] ;
      base_descript_audio = indexation_automatique( base_descript_audio, &nbr_descripteur,n,m);
+     printf("Indexation terminer\n");
      return 0;
 }
