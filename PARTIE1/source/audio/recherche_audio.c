@@ -99,17 +99,21 @@ void main(){
             chemin[taille-1]='v';
             strcat(cmdj,chemin);
             
-            //Ces lignes servent a jouer le jingle .
+            //Ces lignes servent a ecrire la commande pour jouer le jingle .
              }
 
         else{
             printf("Le jingle ne se trouve pas dans %s.\n",descrip_corpus[i].identifiant);
             }
     }
-     
-    //  system(cmdj);
-    //  system(commande);
-    //  //base_descript_audio = indexation_automatique( base_descript_audio, &nbr_descripteur,n,m);
-    //  //base_descript_audio = indexation_automatique( base_descript_audio, &nbr_descripteur,n,m);
+     printf("Pour lancer le lecteur tapez 1 sinon tapez un autre chiffre \n");
+     int key;
+    scanf("%d",&key);
+    if(key == 1){ 
+        system(cmdj);
+        system(commande); 
+    }
+
+  
 
 }
