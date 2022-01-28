@@ -13,7 +13,7 @@
 #define NBPIXEL 40000       //Nombre de pixels dans un fichier image RGB
 #define NB_VALS_2BITS 64    // Nombre de valeurs des pixels après quatification du 2 bits
 #define NB_VALS_3BITS 512   // Nombre de valeurs des pixels après quatification du 3 bits
-
+#define NB_TEXTES_INDEX 63  //Nombre de textes indexés si tout le traitement s'est bien passé
 #define MSK_2_BITS 0xC0;    //masque binaire 1100 0000 récupère les deux premiers bits lors du prétraitement 192
 #define MSK_3_BITS 0XE0;    //masqque binaire 1110 0000 récupère les 3 premiers bits lors du prétraitement
 
