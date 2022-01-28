@@ -1,3 +1,12 @@
+/*  AUTEUR :    SAURAT DORIAN                                                                               */
+/*                                                                                                          */
+/*  NOM :       comparaison_image.c                                                                         */
+/*                                                                                                          */
+/*  Fonction :  Réalise la fonction d'indexation d'un dossier de fichiers images via un prétraitement des   */
+/*              documents texte, recomposition des pixels en valeurs RVB puis calcul des histogrammes tous  */
+/*              stockés dans un fichier texte                                                               */
+
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
