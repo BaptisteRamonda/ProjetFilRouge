@@ -28,3 +28,11 @@ id.o: source/id.c
 	$(CC) -o id.o -c source/id.c $(CFLAGS)
 
 id.c: headers/id.h	
+
+rights:
+	chmod 777 source/texte/*.sh
+	chmod 777 source/texte/*.out
+	chmod 777 source/audio/*.sh
+	chmod 777 source/audio/*.out
+	chmod 777 source/image/*.sh
+	chmod 777 source/image/*.out
