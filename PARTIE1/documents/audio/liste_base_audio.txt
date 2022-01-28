@@ -1,0 +1,4 @@
+/home/baptister/UPSSITECH/PFR_v3/source/audio/Audio_data_base/jingle_m6.bin
+/home/baptister/UPSSITECH/PFR_v3/source/audio/Audio_data_base/corpus_m6.bin
+/home/baptister/UPSSITECH/PFR_v3/source/audio/Audio_data_base/corpus_fi.bin
+/home/baptister/UPSSITECH/PFR_v3/source/audio/Audio_data_base/jingle_fi.bin
