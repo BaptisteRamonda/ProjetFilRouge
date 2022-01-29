@@ -133,7 +133,7 @@ int main(int arc, char *argv[])
     int taille_moc = file_to_tab(path_para, moc);
     comp_textes comparaison[MAX];
     int entier = comparison(comparaison, moc, taille_moc);
-    for (int i = 0; i < entier; i++)
+    for (int i = 0; i < 5; i++)
     {
         printf("SCORE : %f AVEC", comparaison[i+1].ressemblance);
         printf(" %d MOTS DISTINCTS EN COMMUN : ", comparaison[i+1].nb_mots_communs);
