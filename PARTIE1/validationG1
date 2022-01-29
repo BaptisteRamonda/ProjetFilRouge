@@ -1,0 +1,1172 @@
+Script started on 2022-01-21 13:08:59+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="135" LINES="31"]
+]0;baptister@LAPTOP-T30GGEU2: ~/UPSSITECH/PFR_v3[01;32mbaptister@LAPTOP-T30GGEU2[00m:[01;34m~/UPSSITECH/PFR_v3[00m$ make
+gcc -o main.o -c source/main.c -W -Wall
+gcc -o menu.o -c source/menu.c -W -Wall
+gcc -o id.o -c source/id.c -W -Wall
+gcc -o main main.o menu.o id.o 
+rm -rf *.o
+]0;baptister@LAPTOP-T30GGEU2: ~/UPSSITECH/PFR_v3[01;32mbaptister@LAPTOP-T30GGEU2[00m:[01;34m~/UPSSITECH/PFR_v3[00m$ ./main 
+[H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: 1
+[H[2J[3J
+------------------- MENU UTILISATEUR --------------------
+|                                                       |
+|                    [1] - RECHERCHER                   |
+|                    [2] - RETOUR                       |
+|                                                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: [H[2J[3J
+------------------- MENU UTILISATEUR --------------------
+|                                                       |
+|                    [1] - RECHERCHER                   |
+|                    [2] - RETOUR                       |
+|                                                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: 2
+[H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: [H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: gfuzz
+[H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: [H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: [H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: [H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: [H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: [H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: 2
+[H[2J[3J[H[2J[3JLogin : iegfz
+[H[2J[3JLogin : zygfzf
+[H[2J[3JLogin : o
+Mot de Passe : o
+[H[2J[3J
+----------------- MENU ADMINISTRATEUR -------------------
+|                                                       |
+|                   [1] - INDEXER                       |
+|                   [2] - CONFIG. INDEX.                |
+|                   [3] - RETOUR                        |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: [H[2J[3J
+----------------- MENU ADMINISTRATEUR -------------------
+|                                                       |
+|                   [1] - INDEXER                       |
+|                   [2] - CONFIG. INDEX.                |
+|                   [3] - RETOUR                        |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: 3
+[H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: [H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: 2
+[H[2J[3J
+----------------- MENU ADMINISTRATEUR -------------------
+|                                                       |
+|                   [1] - INDEXER                       |
+|                   [2] - CONFIG. INDEX.                |
+|                   [3] - RETOUR                        |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: [H[2J[3J
+----------------- MENU ADMINISTRATEUR -------------------
+|                                                       |
+|                   [1] - INDEXER                       |
+|                   [2] - CONFIG. INDEX.                |
+|                   [3] - RETOUR                        |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: 3
+[H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: [H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: 1
+[H[2J[3J
+------------------- MENU UTILISATEUR --------------------
+|                                                       |
+|                    [1] - RECHERCHER                   |
+|                    [2] - RETOUR                       |
+|                                                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: [H[2J[3J
+------------------- MENU UTILISATEUR --------------------
+|                                                       |
+|                    [1] - RECHERCHER                   |
+|                    [2] - RETOUR                       |
+|                                                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: 1
+[H[2J[3J
+--------------------- MENU RECHERCHE --------------------
+|                                                       |
+|                      [1] - AUDIO                      |
+|                      [2] - IMAGE                      |
+|                      [3] - TEXTE                      |
+|                      [4] - RETOUR                     |
+|                                                       |
+---------------------------------------------------------
+
+Quel type de document souhaitez-vous rechercher: [H[2J[3J
+--------------------- MENU RECHERCHE --------------------
+|                                                       |
+|                      [1] - AUDIO                      |
+|                      [2] - IMAGE                      |
+|                      [3] - TEXTE                      |
+|                      [4] - RETOUR                     |
+|                                                       |
+---------------------------------------------------------
+
+Quel type de document souhaitez-vous rechercher: 4
+
+------------------- MENU UTILISATEUR --------------------
+|                                                       |
+|                    [1] - RECHERCHER                   |
+|                    [2] - RETOUR                       |
+|                                                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: [H[2J[3J
+------------------- MENU UTILISATEUR --------------------
+|                                                       |
+|                    [1] - RECHERCHER                   |
+|                    [2] - RETOUR                       |
+|                                                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: 2
+[H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: [H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: 2
+[H[2J[3J
+----------------- MENU ADMINISTRATEUR -------------------
+|                                                       |
+|                   [1] - INDEXER                       |
+|                   [2] - CONFIG. INDEX.                |
+|                   [3] - RETOUR                        |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: [H[2J[3J
+----------------- MENU ADMINISTRATEUR -------------------
+|                                                       |
+|                   [1] - INDEXER                       |
+|                   [2] - CONFIG. INDEX.                |
+|                   [3] - RETOUR                        |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: 1
+[H[2J[3J
+-------------------- MENU INDEXATION --------------------
+|                                                       |
+|                      [1] - AUDIO                      |
+|                      [2] - IMAGE                      |
+|                      [3] - TEXTE                      |
+|                      [4] - RETOUR                     |
+|                                                       |
+---------------------------------------------------------
+
+Quel type de document souhaitez-vous indexer: [H[2J[3J
+-------------------- MENU INDEXATION --------------------
+|                                                       |
+|                      [1] - AUDIO                      |
+|                      [2] - IMAGE                      |
+|                      [3] - TEXTE                      |
+|                      [4] - RETOUR                     |
+|                                                       |
+---------------------------------------------------------
+
+Quel type de document souhaitez-vous indexer: 3
+/home/baptister/UPSSITECH/PFR_v3/source/texte
+[H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: [H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: 2
+[H[2J[3J
+----------------- MENU ADMINISTRATEUR -------------------
+|                                                       |
+|                   [1] - INDEXER                       |
+|                   [2] - CONFIG. INDEX.                |
+|                   [3] - RETOUR                        |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: [H[2J[3J
+----------------- MENU ADMINISTRATEUR -------------------
+|                                                       |
+|                   [1] - INDEXER                       |
+|                   [2] - CONFIG. INDEX.                |
+|                   [3] - RETOUR                        |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: 1
+[H[2J[3J
+-------------------- MENU INDEXATION --------------------
+|                                                       |
+|                      [1] - AUDIO                      |
+|                      [2] - IMAGE                      |
+|                      [3] - TEXTE                      |
+|                      [4] - RETOUR                     |
+|                                                       |
+---------------------------------------------------------
+
+Quel type de document souhaitez-vous indexer: [H[2J[3J
+-------------------- MENU INDEXATION --------------------
+|                                                       |
+|                      [1] - AUDIO                      |
+|                      [2] - IMAGE                      |
+|                      [3] - TEXTE                      |
+|                      [4] - RETOUR                     |
+|                                                       |
+---------------------------------------------------------
+
+Quel type de document souhaitez-vous indexer: 3
+/home/baptister/UPSSITECH/PFR_v3/source/texte
+[H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: [H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: 1
+[H[2J[3J
+------------------- MENU UTILISATEUR --------------------
+|                                                       |
+|                    [1] - RECHERCHER                   |
+|                    [2] - RETOUR                       |
+|                                                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: [H[2J[3J
+------------------- MENU UTILISATEUR --------------------
+|                                                       |
+|                    [1] - RECHERCHER                   |
+|                    [2] - RETOUR                       |
+|                                                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: 1
+[H[2J[3J
+--------------------- MENU RECHERCHE --------------------
+|                                                       |
+|                      [1] - AUDIO                      |
+|                      [2] - IMAGE                      |
+|                      [3] - TEXTE                      |
+|                      [4] - RETOUR                     |
+|                                                       |
+---------------------------------------------------------
+
+Quel type de document souhaitez-vous rechercher: [H[2J[3J
+--------------------- MENU RECHERCHE --------------------
+|                                                       |
+|                      [1] - AUDIO                      |
+|                      [2] - IMAGE                      |
+|                      [3] - TEXTE                      |
+|                      [4] - RETOUR                     |
+|                                                       |
+---------------------------------------------------------
+
+Quel type de document souhaitez-vous rechercher: 3
+[H[2J[3J
+----------------- MENU RECHERCHE TEXTE ------------------
+|                                                       |
+|                   [1] - PAR MOT-CLE                   |
+|                   [2] - PAR FICHIER                   |
+|                   [3] - RETOUR                        |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Comment souhaitez-vous effectuer cette recherche: [H[2J[3J
+----------------- MENU RECHERCHE TEXTE ------------------
+|                                                       |
+|                   [1] - PAR MOT-CLE                   |
+|                   [2] - PAR FICHIER                   |
+|                   [3] - RETOUR                        |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Comment souhaitez-vous effectuer cette recherche: 1
+Entrez le mot de recherche : cellules
+
+
+17-Une_équipe_française_a_réussi.xml cellules 30 
+03-Des_chercheurs_parviennent_à_régénérer.xml cellules 22 
+05-La_circoncision_pourrait_réduire_le.xml cellules 1 
+
+SAISIR UN NOMBRE POUR CONTINUER:1 
+1
+[H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: [H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: 1
+[H[2J[3J
+------------------- MENU UTILISATEUR --------------------
+|                                                       |
+|                    [1] - RECHERCHER                   |
+|                    [2] - RETOUR                       |
+|                                                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: [H[2J[3J
+------------------- MENU UTILISATEUR --------------------
+|                                                       |
+|                    [1] - RECHERCHER                   |
+|                    [2] - RETOUR                       |
+|                                                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: 1
+[H[2J[3J
+--------------------- MENU RECHERCHE --------------------
+|                                                       |
+|                      [1] - AUDIO                      |
+|                      [2] - IMAGE                      |
+|                      [3] - TEXTE                      |
+|                      [4] - RETOUR                     |
+|                                                       |
+---------------------------------------------------------
+
+Quel type de document souhaitez-vous rechercher: [H[2J[3J
+--------------------- MENU RECHERCHE --------------------
+|                                                       |
+|                      [1] - AUDIO                      |
+|                      [2] - IMAGE                      |
+|                      [3] - TEXTE                      |
+|                      [4] - RETOUR                     |
+|                                                       |
+---------------------------------------------------------
+
+Quel type de document souhaitez-vous rechercher: 3
+[H[2J[3J
+----------------- MENU RECHERCHE TEXTE ------------------
+|                                                       |
+|                   [1] - PAR MOT-CLE                   |
+|                   [2] - PAR FICHIER                   |
+|                   [3] - RETOUR                        |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Comment souhaitez-vous effectuer cette recherche: [H[2J[3J
+----------------- MENU RECHERCHE TEXTE ------------------
+|                                                       |
+|                   [1] - PAR MOT-CLE                   |
+|                   [2] - PAR FICHIER                   |
+|                   [3] - RETOUR                        |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Comment souhaitez-vous effectuer cette recherche: 1
+Entrez le mot de recherche : musique
+
+
+05-Musique_électronique___l_élan_collectif.xml musique 5 
+17-La_voix_envoûtante_de_Girija.xml musique 5 
+28-Festival___Ososphère,_un_week-end.xml musique 4 
+12-Musique_classique___un__Oberon_.xml musique 3 
+22-Danse___quarante_jeunes_de.xml musique 3 
+12-Musiques_du_monde___les.xml musique 3 
+15-Le_Théâtre_des_Champs-Elysées_s_offre.xml musique 1 
+05-Prague_inaugure_les_Journées_européennes.xml musique 1 
+08-Carlos_do_Carmo____Le.xml musique 1 
+26-Jazz___Manu_Katché,_haut.xml musique 1 
+15-Danse___Preljocaj_emmène_l_Opéra.xml musique 1 
+
+SAISIR UN NOMBRE POUR CONTINUER:1 1
+[H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: [H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: 1
+[H[2J[3J
+------------------- MENU UTILISATEUR --------------------
+|                                                       |
+|                    [1] - RECHERCHER                   |
+|                    [2] - RETOUR                       |
+|                                                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: [H[2J[3J
+------------------- MENU UTILISATEUR --------------------
+|                                                       |
+|                    [1] - RECHERCHER                   |
+|                    [2] - RETOUR                       |
+|                                                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: 1
+[H[2J[3J
+--------------------- MENU RECHERCHE --------------------
+|                                                       |
+|                      [1] - AUDIO                      |
+|                      [2] - IMAGE                      |
+|                      [3] - TEXTE                      |
+|                      [4] - RETOUR                     |
+|                                                       |
+---------------------------------------------------------
+
+Quel type de document souhaitez-vous rechercher: [H[2J[3J
+--------------------- MENU RECHERCHE --------------------
+|                                                       |
+|                      [1] - AUDIO                      |
+|                      [2] - IMAGE                      |
+|                      [3] - TEXTE                      |
+|                      [4] - RETOUR                     |
+|                                                       |
+---------------------------------------------------------
+
+Quel type de document souhaitez-vous rechercher: 3
+[H[2J[3J
+----------------- MENU RECHERCHE TEXTE ------------------
+|                                                       |
+|                   [1] - PAR MOT-CLE                   |
+|                   [2] - PAR FICHIER                   |
+|                   [3] - RETOUR                        |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Comment souhaitez-vous effectuer cette recherche: [H[2J[3J
+----------------- MENU RECHERCHE TEXTE ------------------
+|                                                       |
+|                   [1] - PAR MOT-CLE                   |
+|                   [2] - PAR FICHIER                   |
+|                   [3] - RETOUR                        |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Comment souhaitez-vous effectuer cette recherche: 1
+Entrez le mot de recherche : iygzzd
+
+
+
+SAISIR UN NOMBRE POUR CONTINUER:1 1
+[H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: [H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: 1
+[H[2J[3J
+------------------- MENU UTILISATEUR --------------------
+|                                                       |
+|                    [1] - RECHERCHER                   |
+|                    [2] - RETOUR                       |
+|                                                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: [H[2J[3J
+------------------- MENU UTILISATEUR --------------------
+|                                                       |
+|                    [1] - RECHERCHER                   |
+|                    [2] - RETOUR                       |
+|                                                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: 1
+[H[2J[3J
+--------------------- MENU RECHERCHE --------------------
+|                                                       |
+|                      [1] - AUDIO                      |
+|                      [2] - IMAGE                      |
+|                      [3] - TEXTE                      |
+|                      [4] - RETOUR                     |
+|                                                       |
+---------------------------------------------------------
+
+Quel type de document souhaitez-vous rechercher: [H[2J[3J
+--------------------- MENU RECHERCHE --------------------
+|                                                       |
+|                      [1] - AUDIO                      |
+|                      [2] - IMAGE                      |
+|                      [3] - TEXTE                      |
+|                      [4] - RETOUR                     |
+|                                                       |
+---------------------------------------------------------
+
+Quel type de document souhaitez-vous rechercher: 3
+[H[2J[3J
+----------------- MENU RECHERCHE TEXTE ------------------
+|                                                       |
+|                   [1] - PAR MOT-CLE                   |
+|                   [2] - PAR FICHIER                   |
+|                   [3] - RETOUR                        |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Comment souhaitez-vous effectuer cette recherche: [H[2J[3J
+----------------- MENU RECHERCHE TEXTE ------------------
+|                                                       |
+|                   [1] - PAR MOT-CLE                   |
+|                   [2] - PAR FICHIER                   |
+|                   [3] - RETOUR                        |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Comment souhaitez-vous effectuer cette recherche: 2
+03-Des_chercheurs_parviennent_à_régénérer.xml	      15-Capturer_et_emprisonner_le_CO2,.xml
+03-Mimer_un_signal_nerveux_pour.xml		      15-Danse___Preljocaj_emmène_l_Opéra.xml
+05-Au_stade_d_Abidjan,_la_défaite.xml		      15-La_mort_de_Robert_Wise,.xml
+05-Edition___les_mots_et.xml			      15-Le_Théâtre_des_Champs-Elysées_s_offre.xml
+05-Jean-Christophe_Bette_a_dû_attendre.xml	      15-Lille_s_incline_dans_les.xml
+05-L_apnéiste_français_Guillaume_Néry_plonge.xml      15-Un_quasar_solitaire_bouleverse_les.xml
+05-La_circoncision_pourrait_réduire_le.xml	      15-_Si_on_veut_aller_trop.xml
+05-Le_Colombien_Juan_Pablo_Montoya.xml		      16-Une_sonde_japonaise_va_tenter.xml
+05-Le_théâtre_de_texte_confronté.xml		      17-Anouk_Aimée_et_Philippe_Noiret.xml
+05-Musique_électronique___l_élan_collectif.xml	      17-De_la_difficulté_d_anticiper_les.xml
+05-Photographie___Philip_Blenkinsop_a.xml	      17-La_voix_envoûtante_de_Girija.xml
+05-Prague_inaugure_les_Journées_européennes.xml       17-Une_équipe_française_a_réussi.xml
+05-Rock___l_Illinois_magique_de.xml		      18-Battue_par_la_Slovénie,_l_équipe.xml
+05-Tours_d_honneur_pour_les_athlètes.xml	      18-L_équipe_de_France_de_tennis.xml
+06-La_contamination_du_maïs_par.xml		      18-Les_22e_Journées_du_Patrimoine.xml
+06-Les_mauvais_comptes_d_une_élimination.xml	      18-Ligue_1___Lyon_a.xml
+06-Sensibiliser_à_la_vaccination_grippale.xml	      21-La_France_se_réveille_pour.xml
+06-US_Open___Mauresmo_et.xml			      21-Matières_plastiques_et_pesticides_pourraient.xml
+07-Un_député_UMP_lance_une.xml			      22-Danse___quarante_jeunes_de.xml
+08-Carlos_do_Carmo____Le.xml			      22-Des_laboureurs,_des_OGM..._et.xml
+08-L_équipe_de_France_victime_d_un.xml		      22-Dominique_Noël____Les_architectes.xml
+08-La_mission_Deep_Impact_permet.xml		      22-Exposition___les_métamorphoses_picturales.xml
+08-Pavé,_tour_ou_silo,_cinq.xml			      22-Grippe_aviaire___la_course.xml
+08-Sous_l_effet_du_réchauffement,_les.xml	      22-Les_clubs_de_football_anglais.xml
+08-Théâtre___l_échappée_belle,_peu.xml		      22-Sursaut_des_Monégasques_après_le.xml
+08-US_Open___Pierce_élimine.xml			      22-Ted_Stanger,_l_Américain_de_service.xml
+09-Miracle___le_cricket_est.xml			      23-Les_Bleus,_tombeurs_de_la.xml
+10-La_réalité_virtuelle_et_l_informatique.xml	      24-Canicules_et_sécheresses_menacent_de.xml
+10-Le_cyclone_Katrina_complique_le.xml		      26-Grippe_aviaire___une_sixième.xml
+11-La_troposphère_paie,_au_prix.xml		      26-Jazz___Manu_Katché,_haut.xml
+12-Agassi_plie_face_au_meilleur.xml		      26-Lyon_prend_ses_aises_en.xml
+12-Fernando_Alonso_n_est_plus_qu_à.xml		      26-Tom_Boonen_sacré_champion_du.xml
+12-Jean-Marie_Sevestre,_libraire_et_PDG.xml	      27-A_Lens,_le_Louvre_sera.xml
+12-Musique_classique___un__Oberon_.xml		      27-Le_Stade_de_France_s_ouvre.xml
+12-Musiques_du_monde___les.xml			      27-Martin_Scorsese_inaugure_la_Cinémathèque.xml
+12-Succès_sur_les_tatamis,_polémique.xml	      27-Voyager_1_s_aventure_dans_l_au-delà.xml
+13-Des_astronomes_détectent_l_explosion_cosmique.xml  28-A_Hossegor,_Kelly_Slater_peut.xml
+13-L_inattendue_lévitation_de_la_goutte.xml	      28-Danse___Robyn_Orlin_et.xml
+13-Les_accidents_vasculaires_cérébraux,_à.xml	      28-Festival___Ososphère,_un_week-end.xml
+13-Ligue_des_champions____Si.xml		      28-_Œdipe_à_Colone_,_la_rage.xml
+14-Grippe_aviaire___l_OMS_exhorte.xml		      29-Forte_réduction_de_la_calotte.xml
+15-Capturer_et_emprisonner_le_CO.xml		      29-Ligue_des_champions___Lyon.xml
+TAPER LE NOM DU FICHIER A OUVRIR:06-US_Open___Mauresmo_et.xml
+
+
+SCORE : 64.516129 AVEC 13 MOTS DISTINCTS EN COMMUN : 08-US_Open___Pierce_élimine.xml 
+SCORE : 38.709675 AVEC 11 MOTS DISTINCTS EN COMMUN : 12-Agassi_plie_face_au_meilleur.xml 
+SCORE : 35.483871 AVEC 9 MOTS DISTINCTS EN COMMUN : 13-Les_accidents_vasculaires_cérébraux,_à.xml 
+SCORE : 32.258064 AVEC 9 MOTS DISTINCTS EN COMMUN : 06-Les_mauvais_comptes_d_une_élimination.xml 
+SCORE : 29.032257 AVEC 8 MOTS DISTINCTS EN COMMUN : 12-Fernando_Alonso_n_est_plus_qu_à.xml 
+
+SAISIR UN NOMBRE POUR CONTINUER:1
+[H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: [H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: 2
+[H[2J[3J
+----------------- MENU ADMINISTRATEUR -------------------
+|                                                       |
+|                   [1] - INDEXER                       |
+|                   [2] - CONFIG. INDEX.                |
+|                   [3] - RETOUR                        |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: [H[2J[3J
+----------------- MENU ADMINISTRATEUR -------------------
+|                                                       |
+|                   [1] - INDEXER                       |
+|                   [2] - CONFIG. INDEX.                |
+|                   [3] - RETOUR                        |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: 1
+[H[2J[3J
+-------------------- MENU INDEXATION --------------------
+|                                                       |
+|                      [1] - AUDIO                      |
+|                      [2] - IMAGE                      |
+|                      [3] - TEXTE                      |
+|                      [4] - RETOUR                     |
+|                                                       |
+---------------------------------------------------------
+
+Quel type de document souhaitez-vous indexer: [H[2J[3J
+-------------------- MENU INDEXATION --------------------
+|                                                       |
+|                      [1] - AUDIO                      |
+|                      [2] - IMAGE                      |
+|                      [3] - TEXTE                      |
+|                      [4] - RETOUR                     |
+|                                                       |
+---------------------------------------------------------
+
+Quel type de document souhaitez-vous indexer: 1
+rm: cannot remove '../../documents/audio/*.txt': No such file or directory
+[H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: [H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: 1
+[H[2J[3J
+------------------- MENU UTILISATEUR --------------------
+|                                                       |
+|                    [1] - RECHERCHER                   |
+|                    [2] - RETOUR                       |
+|                                                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: [H[2J[3J
+------------------- MENU UTILISATEUR --------------------
+|                                                       |
+|                    [1] - RECHERCHER                   |
+|                    [2] - RETOUR                       |
+|                                                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: 1
+[H[2J[3J
+--------------------- MENU RECHERCHE --------------------
+|                                                       |
+|                      [1] - AUDIO                      |
+|                      [2] - IMAGE                      |
+|                      [3] - TEXTE                      |
+|                      [4] - RETOUR                     |
+|                                                       |
+---------------------------------------------------------
+
+Quel type de document souhaitez-vous rechercher: [H[2J[3J
+--------------------- MENU RECHERCHE --------------------
+|                                                       |
+|                      [1] - AUDIO                      |
+|                      [2] - IMAGE                      |
+|                      [3] - TEXTE                      |
+|                      [4] - RETOUR                     |
+|                                                       |
+---------------------------------------------------------
+
+Quel type de document souhaitez-vous rechercher: 1
+Listes de jingles disponibles dans la base de donnees audio 
+1- /home/baptister/UPSSITECH/PFR_v3/source/audio/Audio_data_base/jingle_m6.bin 
+2- /home/baptister/UPSSITECH/PFR_v3/source/audio/Audio_data_base/jingle_fi.bin 
+
+Donner le numero du jingle que vous voulez recherchez : 1
+
+Le jingle se trouve dans /home/baptister/UPSSITECH/PFR_v3/source/audio/Audio_data_base/corpus_m6.bin et y apparait a 134.784012s.
+Le jingle ne se trouve pas dans /home/baptister/UPSSITECH/PFR_v3/source/audio/Audio_data_base/corpus_fi.bin.
+
+SAISIR UN NOMBRE POUR CONTINUER:1
+[H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: [H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: 2
+[H[2J[3J
+----------------- MENU ADMINISTRATEUR -------------------
+|                                                       |
+|                   [1] - INDEXER                       |
+|                   [2] - CONFIG. INDEX.                |
+|                   [3] - RETOUR                        |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: [H[2J[3J
+----------------- MENU ADMINISTRATEUR -------------------
+|                                                       |
+|                   [1] - INDEXER                       |
+|                   [2] - CONFIG. INDEX.                |
+|                   [3] - RETOUR                        |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: 1
+[H[2J[3J
+-------------------- MENU INDEXATION --------------------
+|                                                       |
+|                      [1] - AUDIO                      |
+|                      [2] - IMAGE                      |
+|                      [3] - TEXTE                      |
+|                      [4] - RETOUR                     |
+|                                                       |
+---------------------------------------------------------
+
+Quel type de document souhaitez-vous indexer: [H[2J[3J
+-------------------- MENU INDEXATION --------------------
+|                                                       |
+|                      [1] - AUDIO                      |
+|                      [2] - IMAGE                      |
+|                      [3] - TEXTE                      |
+|                      [4] - RETOUR                     |
+|                                                       |
+---------------------------------------------------------
+
+Quel type de document souhaitez-vous indexer: 2
+/home/baptister/UPSSITECH/PFR_v3/source/image
+rm: cannot remove '../../documents/image/descripteurs/base_descripteur_image.txt': No such file or directory
+[H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: [H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: 2
+[H[2J[3J
+----------------- MENU ADMINISTRATEUR -------------------
+|                                                       |
+|                   [1] - INDEXER                       |
+|                   [2] - CONFIG. INDEX.                |
+|                   [3] - RETOUR                        |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: [H[2J[3J
+----------------- MENU ADMINISTRATEUR -------------------
+|                                                       |
+|                   [1] - INDEXER                       |
+|                   [2] - CONFIG. INDEX.                |
+|                   [3] - RETOUR                        |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: 2
+[H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: [H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: 2
+[H[2J[3J
+----------------- MENU ADMINISTRATEUR -------------------
+|                                                       |
+|                   [1] - INDEXER                       |
+|                   [2] - CONFIG. INDEX.                |
+|                   [3] - RETOUR                        |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: [H[2J[3J
+----------------- MENU ADMINISTRATEUR -------------------
+|                                                       |
+|                   [1] - INDEXER                       |
+|                   [2] - CONFIG. INDEX.                |
+|                   [3] - RETOUR                        |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: 1
+[H[2J[3J
+-------------------- MENU INDEXATION --------------------
+|                                                       |
+|                      [1] - AUDIO                      |
+|                      [2] - IMAGE                      |
+|                      [3] - TEXTE                      |
+|                      [4] - RETOUR                     |
+|                                                       |
+---------------------------------------------------------
+
+Quel type de document souhaitez-vous indexer: [H[2J[3J
+-------------------- MENU INDEXATION --------------------
+|                                                       |
+|                      [1] - AUDIO                      |
+|                      [2] - IMAGE                      |
+|                      [3] - TEXTE                      |
+|                      [4] - RETOUR                     |
+|                                                       |
+---------------------------------------------------------
+
+Quel type de document souhaitez-vous indexer: 4
+
+----------------- MENU ADMINISTRATEUR -------------------
+|                                                       |
+|                   [1] - INDEXER                       |
+|                   [2] - CONFIG. INDEX.                |
+|                   [3] - RETOUR                        |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: [H[2J[3J
+----------------- MENU ADMINISTRATEUR -------------------
+|                                                       |
+|                   [1] - INDEXER                       |
+|                   [2] - CONFIG. INDEX.                |
+|                   [3] - RETOUR                        |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Que souhaitez-vous faire: 2
+[H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: [H[2J[3J
+-------------------- MENU PRINCIPAL ---------------------
+|                                                       |
+|                   [1] - UTILISATEUR                   |
+|                   [2] - ADMINISTRATEUR                |
+|                   [3] - QUITTER                       |
+|                                                       |
+|                                                       |
+---------------------------------------------------------
+
+Quel est votre profil: 3
+[H[2J[3J]0;baptister@LAPTOP-T30GGEU2: ~/UPSSITECH/PFR_v3[01;32mbaptister@LAPTOP-T30GGEU2[00m:[01;34m~/UPSSITECH/PFR_v3[00m$ [K]0;baptister@LAPTOP-T30GGEU2: ~/UPSSITECH/PFR_v3[01;32mbaptister@LAPTOP-T30GGEU2[00m:[01;34m~/UPSSITECH/PFR_v3[00m$ [K]0;baptister@LAPTOP-T30GGEU2: ~/UPSSITECH/PFR_v3[01;32mbaptister@LAPTOP-T30GGEU2[00m:[01;34m~/UPSSITECH/PFR_v3[00m$ exit
+exit
+
+Script done on 2022-01-21 13:34:48+01:00 [COMMAND_EXIT_CODE="0"]
