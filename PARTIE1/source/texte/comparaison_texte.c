@@ -101,9 +101,9 @@ int comparison(comp_textes *comparaison, mot_occurences *compare, int taille_com
     fclose(liste_fichiers);
 
     comp_textes temp;
-    for (int i = 0; i < nombre_mots - 1; i++)
+    for (int i = 0; i < indice_tableau - 1; i++)
     {
-        for (int j = i + 1; j < nombre_mots; j++)
+        for (int j = i + 1; j < indice_tableau; j++)
         {
             if (comparaison[i].ressemblance < comparaison[j].ressemblance)
             {
@@ -133,7 +133,7 @@ int main(int arc, char *argv[])
     int taille_moc = file_to_tab(path_para, moc);
     comp_textes comparaison[MAX];
     int entier = comparison(comparaison, moc, taille_moc);
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < entier; i++)
     {
         printf("SCORE : %f AVEC", comparaison[i+1].ressemblance);
         printf(" %d MOTS DISTINCTS EN COMMUN : ", comparaison[i+1].nb_mots_communs);
